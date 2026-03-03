@@ -329,71 +329,143 @@
   </section>
 
   <!-- Contacto -->
-  <section id="contacto" class="section section--alt">
-    <div class="container contact">
-      <div class="contact__copy">
-        <h2>¿List@ para cotizar?</h2>
-        <p class="muted">
-          Cuéntanos qué quieres construir o remodelar. Te respondemos con una propuesta inicial.
-        </p>
+  <section id="contacto" class="contact-section">
+  <div class="container">
+    <div class="contact-head">
+      <h2>Contáctanos</h2>
+      <p>¿Tienes un proyecto en mente? Estamos listos para ayudarte a hacerlo realidad.</p>
+    </div>
 
-        <div class="contact__box card">
-          <h3>Contacto rápido</h3>
-          <p class="muted">Puedes escribirnos directo por WhatsApp y enviarnos fotos/medidas.</p>
-          <a class="btn btn--full" id="waBtn2" href="#" rel="noopener">Abrir WhatsApp</a>
-          <div class="contact__mini">
-            <span class="pill">📍 Perú / Chile</span>
-            <span class="pill">🧾 Presupuesto por partidas</span>
-            <span class="pill">🗓️ Cronograma</span>
+    <div class="contact-grid">
+      <!-- LEFT -->
+      <aside class="contact-left">
+        <h3>Información de Contacto</h3>
+
+        <div class="info-list">
+          <div class="info-item">
+            <span class="info-ic">📞</span>
+            <div>
+              <strong>Teléfono</strong>
+              <div class="muted">+51 999 999 999</div>
+              <div class="muted">+51 988 888 888</div>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="info-ic">✉️</span>
+            <div>
+              <strong>Email</strong>
+              <div class="muted">info@nablama.com</div>
+              <div class="muted">ventas@nablama.com</div>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="info-ic">📍</span>
+            <div>
+              <strong>Dirección</strong>
+              <div class="muted">Av. Principal 123, Oficina 456</div>
+              <div class="muted">Ciudad, País</div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <form class="card form" id="quoteForm">
-        <h3>Solicitud de cotización</h3>
+        <div class="hours-card">
+          <h4>Horario de Atención</h4>
+          <p><strong>Lunes - Viernes:</strong> 8:00 AM - 6:00 PM</p>
+          <p><strong>Sábados:</strong> 9:00 AM - 2:00 PM</p>
+          <p><strong>Domingos:</strong> Cerrado</p>
+        </div>
+
+        <!-- ✅ Contacto rápido -->
+        <div class="quick-card">
+          <h4>Contacto rápido</h4>
+          <p class="muted">Envíanos fotos/medidas por WhatsApp y te respondemos hoy.</p>
+          <a class="wa-btn" id="waContactBtn" href="#" target="_blank" rel="noopener">
+            💬 Hablar por WhatsApp
+          </a>
+        </div>
+      </aside>
+
+      <!-- RIGHT -->
+      <form class="quote-card" id="quoteForm">
+        <h3>Solicita una Cotización</h3>
 
         <label>
-          Nombre
+          Nombre Completo
           <input name="name" type="text" placeholder="Tu nombre" required />
         </label>
 
         <label>
-          WhatsApp / Teléfono
+          Email
+          <input name="email" type="email" placeholder="tu@email.com" required />
+        </label>
+
+        <label>
+          Teléfono
           <input name="phone" type="tel" placeholder="+51 999 999 999" required />
         </label>
 
         <label>
-          ¿Qué necesitas?
+          Servicio de Interés
           <select name="service" required>
-            <option value="" selected disabled>Selecciona</option>
-            <option>Construcción de casa</option>
-            <option>Remodelación</option>
-            <option>Diseño + planos</option>
-            <option>Otro</option>
+            <option value="Construcción Integral">Construcción Integral</option>
+            <option value="Remodelación">Remodelación</option>
+            <option value="Diseño 2D/3D">Diseño 2D/3D</option>
+            <option value="Enchapado">Enchapado</option>
+            <option value="Techado">Techado</option>
           </select>
         </label>
 
         <label>
           Mensaje
-          <textarea name="message" rows="4" placeholder="Metraje aproximado, distrito/ciudad, tipo de acabado, fecha objetivo..."></textarea>
+          <textarea name="message" rows="5" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
         </label>
 
-        <button class="btn btn--full" type="submit">Enviar</button>
-        <p class="tiny muted">* Este formulario es demo. Puedes conectarlo a Email/WhatsApp o a tu backend.</p>
+        <button class="submit-btn" type="submit">Enviar Solicitud ✈️</button>
+        <p class="tiny muted">* Si prefieres, usa “Contacto rápido” por WhatsApp.</p>
       </form>
     </div>
-  </section>
+  </div>
+</section>
+
+<script>
+  // Cambia tu número aquí (con código de país, sin +)
+  const WHATSAPP_NUMBER = "51999999999";
+  const WA_TEXT = "Hola NABLAMA, quiero una cotización. Mi proyecto es:";
+
+  const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WA_TEXT)}`;
+  const waBtn = document.getElementById("waContactBtn");
+  if (waBtn) waBtn.href = waUrl;
+
+  // Form -> WhatsApp
+  const form = document.getElementById("quoteForm");
+  if (form) {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const fd = new FormData(form);
+
+      const msg =
+        `Hola NABLAMA, quiero una cotización.%0A` +
+        `Nombre: ${encodeURIComponent(fd.get("name") || "")}%0A` +
+        `Email: ${encodeURIComponent(fd.get("email") || "")}%0A` +
+        `Teléfono: ${encodeURIComponent(fd.get("phone") || "")}%0A` +
+        `Servicio: ${encodeURIComponent(fd.get("service") || "")}%0A` +
+        `Mensaje: ${encodeURIComponent(fd.get("message") || "")}`;
+
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, "_blank", "noopener");
+    });
+  }
+</script>
   
+<!-- footer -->
   <footer class="footer">
   <div class="container footer__grid">
-
     <!-- Columna 1: Marca -->
     <div class="footer__brand">
       <h3>NABLAMA SA</h3>
-      <small>Construcción & Diseño</small>
       <p>Construyendo el futuro, una casa a la vez.</p>
     </div>
-
     <!-- Columna 2: Servicios -->
     <div class="footer__col">
       <h4>Servicios</h4>
@@ -404,7 +476,6 @@
         <li><a href="#">Techado</a></li>
       </ul>
     </div>
-
     <!-- Columna 3: Empresa -->
     <div class="footer__col">
       <h4>Empresa</h4>
@@ -415,7 +486,6 @@
         <li><a href="#">Contacto</a></li>
       </ul>
     </div>
-
     <!-- Columna 4: Redes -->
     <div class="footer__col">
       <h4>Síguenos</h4>
@@ -428,10 +498,9 @@
     </div>
 
   </div>
-
   <!-- Línea inferior -->
   <div class="footer__bottom">
-    <p>© <span id="year"></span> Nablama SA. Todos los derechos reservados.| Desarrollado por BlakeDev - Nayeli Paitan</p>
+    <p>© <span id="year"></span> Nablama S.A. Todos los derechos reservados| Desarrollado por BlakeDev - Nayeli Paitan</p>
   </div>
 </footer>
 
