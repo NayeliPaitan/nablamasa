@@ -454,3 +454,179 @@ body{
     justify-content: center;
   }
 }
+
+
+/* ===== CONTACT SECTION (NABLAMA) ===== */
+.contact-section{
+  padding: 70px 0;
+  background:
+    radial-gradient(800px 420px at 10% 10%, rgba(59,130,166,.14), transparent 60%),
+    radial-gradient(700px 360px at 90% 0%, rgba(95,169,201,.10), transparent 55%),
+    #0f172a; /* azul noche */
+  color: #F2F2F2;
+}
+
+.contact-section .container{
+  width:min(1120px, calc(100% - 40px));
+  margin:0 auto;
+}
+
+.contact-head{
+  text-align:center;
+  margin-bottom: 26px;
+}
+.contact-head h2{
+  margin:0;
+  font-size: 34px;
+}
+.contact-head p{
+  margin: 8px 0 0;
+  opacity:.85;
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 22px;
+  align-items: start;
+}
+
+/* LEFT */
+.contact-left h3{
+  margin: 0 0 14px;
+  font-size: 18px;
+}
+
+.info-list{
+  display:grid;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.info-item{
+  display:flex;
+  gap: 12px;
+  padding: 14px;
+  border-radius: 14px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+.info-ic{
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: rgba(59,130,166,.20);
+  border: 1px solid rgba(59,130,166,.35);
+}
+
+.muted{ opacity:.8; }
+.tiny{ font-size:12px; opacity:.75; margin-top: 10px; }
+
+.hours-card,
+.quick-card{
+  margin-top: 12px;
+  padding: 16px;
+  border-radius: 14px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+.hours-card h4,
+.quick-card h4{
+  margin:0 0 10px;
+  font-size: 14px;
+  opacity:.95;
+}
+
+.hours-card p{ margin: 8px 0; opacity:.85; }
+
+/* WhatsApp button */
+.wa-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  text-decoration:none;
+  font-weight: 700;
+  background: #3B82A6;   /* azul corporativo */
+  color:#fff;
+  border: 1px solid rgba(255,255,255,.10);
+  transition: .2s ease;
+}
+.wa-btn:hover{ background:#5FA9C9; transform: translateY(-1px); }
+
+/* RIGHT (form card) */
+.quote-card{
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.10);
+  box-shadow: 0 18px 40px rgba(0,0,0,.25);
+}
+
+.quote-card h3{
+  margin: 0 0 14px;
+  font-size: 18px;
+}
+
+.quote-card label{
+  display:block;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 10px 0;
+  opacity: .95;
+}
+
+.quote-card input,
+.quote-card select,
+.quote-card textarea{
+  width:100%;
+  margin-top: 6px;
+  padding: 12px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(15,23,42,.55);
+  color: #F2F2F2;
+  outline: none;
+  font: inherit;
+}
+
+.quote-card input:focus,
+.quote-card select:focus,
+.quote-card textarea:focus{
+  border-color: rgba(95,169,201,.65);
+  box-shadow: 0 0 0 4px rgba(95,169,201,.18);
+}
+
+/* Submit button */
+.submit-btn{
+  width:100%;
+  margin-top: 12px;
+  padding: 13px 14px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 800;
+  background: #ff6b2c; /* acento tipo la imagen */
+  color: #fff;
+  transition: .2s ease;
+}
+.submit-btn:hover{
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 980px){
+  .contact-grid{
+    grid-template-columns: 1fr;
+  }
+  .contact-head h2{ font-size: 30px; }
+}
