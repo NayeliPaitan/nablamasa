@@ -1,6 +1,6 @@
 // Config rápido: cambia el número y mensaje de WhatsApp aquí
-const WHATSAPP_NUMBER = "51999999999"; // <-- pon tu número con código país (Perú: 51)
-const WHATSAPP_MSG = "Hola NABLAMA, quiero una cotización. Mi proyecto es:";
+const WHATSAPP_NUMBER = "51950595875"; 
+const WHATSAPP_MSG = "Hola NABLAMA S.A., quiero una cotización. Mi proyecto es:";
 
 function buildWhatsAppUrl() {
   const text = encodeURIComponent(WHATSAPP_MSG);
@@ -47,7 +47,7 @@ if (form) {
     const message = fd.get("message") || "";
 
     const fullMsg =
-      `Hola NABLAMA, quiero una cotización.%0A` +
+      `Hola NABLAMA S.A. , quiero una cotización.%0A` +
       `Nombre: ${encodeURIComponent(name)}%0A` +
       `Teléfono: ${encodeURIComponent(phone)}%0A` +
       `Servicio: ${encodeURIComponent(service)}%0A` +
@@ -56,3 +56,27 @@ if (form) {
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${fullMsg}`, "_blank", "noopener");
   });
 }
+
+
+const track = document.querySelector('.testimonial-track');
+let isPaused = false;
+
+// Pausar cuando el usuario pone el mouse encima o toca el slide
+track.addEventListener('mouseenter', () => isPaused = true);
+track.addEventListener('mouseleave', () => isPaused = false);
+
+function step() {
+  if (!isPaused) {
+    // Si llega al final, vuelve al inicio
+    if (track.scrollLeft >= (track.scrollWidth - track.offsetWidth)) {
+      track.scrollLeft = 0;
+    } else {
+      track.scrollLeft += 1; // Velocidad del scroll
+    }
+  }
+  requestAnimationFrame(step);
+}
+
+// Iniciar la animación
+requestAnimationFrame(step);
+
