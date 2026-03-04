@@ -1,16 +1,25 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/NABLAMASA.ico">
+  <link rel="shortcut icon" src="img/icon.png" />
   <title>NABLAMA S.A. | Construcción y Diseño de Casas</title>
-  <meta name="description" content="NABLAMA S.A. Construcción y diseño de casas. Presupuestos claros, cronogramas realistas y ejecución con calidad. Cotiza por WhatsApp." />
+  <meta name="description"
+    content="NABLAMA S.A. Construcción y diseño de casas. Presupuestos claros, cronogramas realistas y ejecución con calidad. Cotiza por WhatsApp." />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 
@@ -19,8 +28,8 @@
   <header class="topbar">
     <div class="container topbar__inner">
       <a class="brand" href="#inicio" aria-label="NABLAMA S.A.">
-        <img src="img/logo-1.png" width="100" height="100" alt="NABLAMA S.A.">
-       <!-- <span class="brand__mark" aria-hidden="true"></span>-->
+        <img src="img/icon.png" width="70" height="70" alt="NABLAMA S.A.">
+        <!-- <span class="brand__mark" aria-hidden="true"></span>-->
         <span class="brand__text">
           <strong>NABLAMA S.A.</strong>
           <small>Construcción & Diseño</small>
@@ -32,7 +41,6 @@
         <a href="#servicios">Servicios</a>
         <a href="#proyectos">Proyectos</a>
         <a href="#proyectos">Nosotros</a>
-        <!--<a href="#proceso">Proceso</a>-->
         <a href="#faq">FAQ</a>
         <a class="btn btn--sm" href="#contacto">Cotizar Ahora</a>
       </nav>
@@ -53,58 +61,26 @@
   </header>
 
   <!-- Hero -->
-  <main id="inicio" class="hero">
-    <div class="container hero__grid">
-      <div class="hero__copy">
-        <p class="badge">🏗️ Construcción residencial • Remodelación • Diseño</p>
-        <h1>Construimos tu casa con <span class="accent">calidad</span> y <span class="accent">control</span>.</h1>
-        <p class="lead">
-          En NABLAMA S.A. trabajamos con ingenieros civiles y maestros albañiles para entregar
-          obras claras: presupuesto, cronograma, avances y acabados.
-        </p>
-
-        <div class="hero__cta">
-          <a class="btn" href="#contacto">Solicitar cotización</a>
-          <a class="btn btn--ghost" id="waBtn" href="#" rel="noopener">Hablar por WhatsApp</a>
-        </div>
-
-        <div class="hero__stats">
-          <div class="stat">
-            <strong>+10</strong>
-            <span>Proyectos ejecutados</span>
-          </div>
-          <div class="stat">
-            <strong>100%</strong>
-            <span>Avances documentados</span>
-          </div>
-          <div class="stat">
-            <strong>Garantía</strong>
-            <span>En acabados y estructura</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero__card">
-        <div class="card card--glass">
-          <h3>Recibe un plan en 24–48h</h3>
-          <p class="muted">Te enviamos una propuesta con rangos de costo, tiempos y etapas.</p>
-
-          <ul class="check">
-            <li>✅ Visita / llamada de levantamiento</li>
-            <li>✅ Presupuesto por partidas</li>
-            <li>✅ Cronograma de obra</li>
-            <li>✅ Seguimiento semanal</li>
-          </ul>
-
-          <a class="btn btn--full" href="#contacto">Quiero mi propuesta</a>
-
-          <p class="tiny muted">
-            * Los tiempos dependen del metraje, permisos y disponibilidad de materiales.
+  <section class="hero" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="badge">🏗️ Construcción residencial • Remodelación • Diseño</p>
+          <br>
+          <h1>Construimos tu casa con <span class="accent">calidad</span> y <span class="accent">control</span>.</h1>
+          <p class="lead">
+            En NABLAMA S.A. trabajamos con ingenieros civiles y maestros albañiles para entregar
+            obras claras: presupuesto, cronograma, avances y acabados.
           </p>
+          <br>
+          <div class="hero__cta">
+            <a class="btn" href="#contacto">Solicitar cotización →</a>
+            <a class="btn btn--ghost" id="waBtn" href="https://wa.me/+51950595875" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i> Hablar por WhatsApp
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
+  </section>
 
   <!-- Trust -->
   <section class="trust">
@@ -125,42 +101,105 @@
   </section>
 
   <!-- Servicios -->
-  <section id="servicios" class="section">
+  <section id="servicios" class="services2">
     <div class="container">
-      <div class="section__head">
-        <h2>Servicios</h2>
-        <p class="muted">Elige el servicio y te armamos una propuesta según tu objetivo y presupuesto.</p>
-      </div>
+      <header class="services2__head">
+        <h2>Nuestros Servicios</h2>
+        <p>Ofrecemos soluciones integrales para todas tus necesidades de construcción y diseño</p>
+      </header>
 
-      <div class="grid grid--3">
-        <article class="card">
-          <h3>Construcción de casas</h3>
-          <p class="muted">Desde planos hasta entrega. Obra gris + acabados con control por etapas.</p>
-          <ul class="bullets">
-            <li>Presupuesto por partidas</li>
-            <li>Cronograma realista</li>
-            <li>Supervisión técnica</li>
-          </ul>
+      <div class="services2__grid">
+        <!-- Card 1 -->
+        <article class="service2">
+          <div class="service2__img" style="background-image:url('img/serv1.jpg')"></div>
+          <div class="service2__body">
+            <div class="service2__row">
+              <span class="service2__icon">🏠</span>
+              <h3>CONSTRUCCIóN Y ARQUITECTURA</h3>
+            </div>
+            <p>Construcción de casas y edificaciones completas con los más altos estándares de calidad.</p>
+            <ul class="bullets">
+              <li>Anteproyecto</li>
+              <li>Planos y metrados</li>
+              <li>Optimización de costos</li>
+            </ul>
+          </div>
         </article>
 
-        <article class="card">
-          <h3>Remodelaciones</h3>
-          <p class="muted">Cocina, baños, ampliaciones, pintura, pisos, cielo raso y más.</p>
-          <ul class="bullets">
-            <li>Diagnóstico y propuesta</li>
-            <li>Plan de obra por semana</li>
-            <li>Acabados premium o estándar</li>
-          </ul>
+        <!-- Card 2 -->
+        <article class="service2">
+          <div class="service2__img" style="background-image:url('img/serv2.jpg')"></div>
+          <div class="service2__body">
+            <div class="service2__row">
+              <span class="service2__icon">📐</span>
+              <h3>Diseño de Planos 2D y 3D</h3>
+            </div>
+            <p>Diseño arquitectónico profesional con visualizaciones realistas en 2D y 3D.</p>
+            <ul class="bullets">
+              <li>Anteproyecto</li>
+              <li>Planos y metrados</li>
+              <li>Optimización de costos</li>
+            </ul>
+          </div>
         </article>
 
-        <article class="card">
-          <h3>Diseño + planos</h3>
-          <p class="muted">Distribución, renders, metrados y especificaciones para construir con seguridad.</p>
-          <ul class="bullets">
-            <li>Anteproyecto</li>
-            <li>Planos y metrados</li>
-            <li>Optimización de costos</li>
-          </ul>
+        <!-- Card 3 -->
+        <article class="service2">
+          <div class="service2__img" style="background-image:url('img/serv3.jpg')"></div>
+          <div class="service2__body">
+            <div class="service2__row">
+              <span class="service2__icon">🧱</span>
+              <h3>Enchapado</h3>
+            </div>
+            <p>Instalación de cerámicas, porcelanatos y acabados de primera calidad.</p>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="service2">
+          <div class="service2__img" style="background-image:url('img/serv4.jpg')"></div>
+          <div class="service2__body">
+            <div class="service2__row">
+              <span class="service2__icon">🏗️</span>
+              <h3>Techado</h3>
+            </div>
+            <p>Instalación y mantenimiento de techos con materiales duraderos y resistentes.</p>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="service2">
+          <div class="service2__img" style="background-image:url('img/serv5.jpg')"></div>
+          <div class="service2__body">
+            <div class="service2__row">
+              <span class="service2__icon">🛠️</span>
+              <h3>Remodelación</h3>
+            </div>
+            <p>Renovamos y transformamos espacios existentes según tus necesidades.</p>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="service2">
+          <div class="service2__img" style="background-image:url('img/serv6.jpg')"></div>
+          <div class="service2__body">
+            <div class="service2__row">
+              <span class="service2__icon">🎨</span>
+              <h3>Acabados</h3>
+            </div>
+            <p>Pintura, estucado y terminaciones que dan el toque final perfecto.</p>
+          </div>
+        </article>
+
+        <article class="service2">
+          <div class="service2__img" style="background-image:url('img/serv6.jpg')"></div>
+          <div class="service2__body">
+            <div class="service2__row">
+              <span class="service2__icon">🎨</span>
+              <h3>Acabados</h3>
+            </div>
+            <p>Pintura, estucado y terminaciones que dan el toque final perfecto.</p>
+          </div>
         </article>
       </div>
     </div>
@@ -210,7 +249,7 @@
     </div>
   </section>
 
-  <!-- Proceso -->
+  <!-- Proceso 
   <section id="proceso" class="section">
     <div class="container">
       <div class="section__head">
@@ -252,49 +291,216 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
 
   <!-- Testimonios -->
   <section class="section section--alt">
     <div class="container">
       <div class="section__head">
         <h2>Lo que dicen nuestros clientes</h2>
-        <p class="muted">Testimonios demo (reemplázalos por reales).</p>
+        <p class="muted">Experiencias reales transformando hogares.</p>
       </div>
+      <!-- cards -->
+      <div class="testimonial-slider">
+        <div class="testimonial-track">
+          <article class="card">
+            <p>“Buen orden en obra y avances semanales. Cumplieron lo que prometieron.”</p>
+            <div class="by">
+              <span class="avatar" aria-hidden="true"></span>
+              <div>
+                <strong>Lena Caceres</strong>
+                <small class="muted">Casa 1er piso</small>
+              </div>
+            </div>
+          </article>
 
-      <div class="grid grid--3">
-        <article class="card">
-          <p>“Buen orden en obra y avances semanales. Cumplieron lo que prometieron.”</p>
-          <div class="by">
-            <span class="avatar" aria-hidden="true"></span>
-            <div>
-              <strong>Cliente 1</strong>
-              <small class="muted">Casa 1 piso</small>
+          <article class="card">
+            <p>“Presupuesto por partidas claro. Lo mejor: cronograma y comunicación.”</p>
+            <div class="by">
+              <span class="avatar" aria-hidden="true"></span>
+              <div>
+                <strong>Juan R.</strong>
+                <small class="muted">Remodelación</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <p>“Acabados finos y bien supervisados. Recomiendo a NABLAMA S.A.”</p>
+            <div class="by">
+              <span class="avatar" aria-hidden="true"></span>
+              <div>
+                <strong>Jaime</strong>
+                <small class="muted">Ampliación</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <p>“Increíble el nivel de detalle de la <strong>Ing. Blanca</strong>. Sus planos fueron exactos y nos ayudó
+              a
+              optimizar cada metro cuadrado de nuestra nueva casa.”</p>
+            <div class="by">
+              <span class="avatar" aria-hidden="true">👩‍💼</span>
+              <div>
+                <strong>Familia Mendoza</strong>
+                <small class="muted">Proyecto de Vivienda Nueva</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <p>“Don <strong>Gerardo</strong> es un maestro de los que ya no hay. Su limpieza en la mezcla y la precisión
+              en el ladrillo son impecables. Muy honesto con los materiales.”</p>
+            <div class="by">
+              <span class="avatar" aria-hidden="true">👷‍♂️</span>
+              <div>
+                <strong>Ing. Ricardo Ruiz</strong>
+                <small class="muted">Remodelación Estructural</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <p>“La combinación perfecta: la gestión de <strong>Blanca</strong> y la mano de obra de
+              <strong>Gerardo</strong>. Cumplieron el cronograma sin sorpresas en el presupuesto.”
+            </p>
+            <div class="by">
+              <span class="avatar" aria-hidden="true">🏠</span>
+              <div>
+                <strong>Sra. Elena Torres</strong>
+                <small class="muted">Ampliación de Segundo Piso</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <p>“La <strong>Ing. Blanca</strong> nos dio una tranquilidad enorme. Sus planos no solo eran hermosos, sino
+              que pasaron todos los permisos municipales sin una sola observación.”</p>
+            <div class="by">
+              <span class="avatar">🏗️</span>
+              <div><strong>Carlos Huamán</strong><small class="muted">Gestión de Licencias</small></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <p>“El maestro <strong>Gerardo</strong> es un artista del concreto. Su técnica para el techado fue impecable
+              y
+              mantuvo la obra limpia en todo momento. Gran equipo.”</p>
+            <div class="by">
+              <span class="avatar">🧱</span>
+              <div><strong>Familia Rivas</strong><small class="muted">Construcción de Casco Gris</small></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <p>“Buscábamos ampliar y nos preocupaba la estructura. <strong>Blanca</strong> hizo el cálculo estructural y
+              <strong>Gerardo</strong> lo ejecutó al pie de la letra. Muy profesionales.”
+            </p>
+            <div class="by">
+              <span class="avatar">📐</span>
+              <div><strong>Ing. Luis M.</strong><small class="muted">Ampliación 3er Piso</small></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <p>“Lo que más valoro es la puntualidad de <strong>Gerardo</strong>. Empezaba a las 8:00 am sin falta.
+              Terminaron el baño y la cocina en el tiempo prometido.”</p>
+            <div class="by">
+              <span class="avatar">🚿</span>
+              <div><strong>Elena Espinoza</strong><small class="muted">Remodelación de Interiores</small></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <p>“Excelente asesoría de la <strong>Ing. Blanca</strong> en la elección de materiales. Nos hizo ahorrar un
+              15% en acero sin sacrificar la seguridad de la casa.”</p>
+            <div class="by">
+              <span class="avatar">💰</span>
+              <div><strong>Roberto Díaz</strong><small class="muted">Vivienda Unifamiliar</small></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <p>“No conocía a nadie de confianza hasta que vi trabajar a <strong>Gerardo</strong>. Su honestidad con el
+              material sobrante dice mucho de sus valores como maestro.”</p>
+            <div class="by">
+              <span class="avatar">🤝</span>
+              <div><strong>Sofía Castro</strong><small class="muted">Cercado de Terreno</small></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <p>“Los planos eléctricos y sanitarios de <strong>Blanca</strong> fueron la clave. Ahora todo funciona
+              perfecto y no tenemos problemas de presión de agua.”</p>
+            <div class="by">
+              <span class="avatar">💧</span>
+              <div><strong>Pedro Alcázar</strong><small class="muted">Instalaciones Técnicas</small></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <p>“El acabado de la fachada que hizo el maestro <strong>Gerardo</strong> quedó de revista. Tiene una mano
+              excelente para el tarrajeo fino y los detalles.”</p>
+            <div class="by">
+              <span class="avatar">🏠</span>
+              <div><strong>Lucía Méndez</strong><small class="muted">Acabados de Fachada</small></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <p>“Recomiendo a ojos cerrados a este equipo. <strong>Blanca</strong> diseña con inteligencia y
+              <strong>Gerardo</strong> construye con maestría. Mi casa quedó mejor de lo que soñé.”
+            </p>
+            <div class="by">
+              <span class="avatar">✨</span>
+              <div><strong>Jorge Luna</strong><small class="muted">Proyecto Llave en Mano</small></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about -->
+  <section class="about" id="empresa">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__text">
+          <h2>Sobre Nablama SA</h2>
+          <p>NABLAMA S.A. es una empresa con más de 25 años de experiencia en el sector de la construcción,
+            especializada en brindar soluciones integrales para proyectos de obra y construcción en general.<br>
+            Nuestro equipo trabaja con compromiso, precisión y responsabilidad en cada proyecto, ofreciendo servicios de
+            construcción, remodelación y desarrollo de planos técnicos.<br>
+            Además, realizamos diseño de planos en AutoCAD 2D y 3D, permitiendo planificar cada obra con mayor claridad,
+            eficiencia y detalle. <br>
+            En NABLAMA S.A. buscamos que cada proyecto se construya con calidad, confianza y profesionalismo,
+            acompañando a nuestros clientes desde la idea inicial hasta la ejecución final.
+          </p>
+          <div class="stats">
+            <div class="stat-card">
+              <div class="n">+25</div>
+              <div class="t">Años de Experiencia</div>
+            </div>
+            <div class="stat-card">
+              <div class="n">+2500</div>
+              <div class="t">Proyectos Completados</div>
+            </div>
+            <div class="stat-card">
+              <div class="n">24/7</div>
+              <div class="t">Soporte al Cliente</div>
+            </div>
+            <div class="stat-card">
+              <div class="n">100%</div>
+              <div class="t">Satisfacción Garantizada</div>
             </div>
           </div>
-        </article>
+        </div>
 
-        <article class="card">
-          <p>“Presupuesto por partidas claro. Lo mejor: cronograma y comunicación.”</p>
-          <div class="by">
-            <span class="avatar" aria-hidden="true"></span>
-            <div>
-              <strong>Cliente 2</strong>
-              <small class="muted">Remodelación</small>
-            </div>
-          </div>
-        </article>
-
-        <article class="card">
-          <p>“Acabados finos y bien supervisados. Recomiendo a NABLAMA.”</p>
-          <div class="by">
-            <span class="avatar" aria-hidden="true"></span>
-            <div>
-              <strong>Cliente 3</strong>
-              <small class="muted">Ampliación</small>
-            </div>
-          </div>
-        </article>
+        <div class="about__media">
+          <img src="img/about.jpg" alt="Obra NABLAMA" />
+          <div class="quote-badge">“La calidad es nuestro compromiso, tu satisfacción es nuestra meta.”</div>
+        </div>
       </div>
     </div>
   </section>
@@ -330,184 +536,189 @@
 
   <!-- Contacto -->
   <section id="contacto" class="contact-section">
-  <div class="container">
-    <div class="contact-head">
-      <h2>Contáctanos</h2>
-      <p>¿Tienes un proyecto en mente? Estamos listos para ayudarte a hacerlo realidad.</p>
-    </div>
+    <div class="container">
+      <div class="contact-head">
+        <h2>Contáctanos</h2>
+        <p>¿Tienes un proyecto en mente? Estamos listos para ayudarte a hacerlo realidad.</p>
+      </div>
 
-    <div class="contact-grid">
-      <!-- LEFT -->
-      <aside class="contact-left">
-        <h3>Información de Contacto</h3>
+      <div class="contact-grid">
+        <!-- LEFT -->
+        <aside class="contact-left">
+          <h3>Información de Contacto</h3>
 
-        <div class="info-list">
-          <div class="info-item">
-            <span class="info-ic">📞</span>
-            <div>
-              <strong>Teléfono</strong>
-              <div class="muted">+51 999 999 999</div>
-              <div class="muted">+51 988 888 888</div>
+          <div class="info-list">
+            <div class="info-item">
+              <span class="info-ic">📞</span>
+              <div>
+                <strong>Teléfono</strong>
+                <div class="muted">+51 950 595 875</div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <span class="info-ic">✉️</span>
+              <div>
+                <strong>Email</strong>
+                <div class="muted">info@nablama.com</div>
+                <div class="muted">ventas@nablama.com</div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <span class="info-ic">📍</span>
+              <div>
+                <strong>Dirección</strong>
+                <div class="muted">Av. Principal 123, Oficina 456</div>
+                <div class="muted">Lima, Perú</div>
+              </div>
             </div>
           </div>
 
-          <div class="info-item">
-            <span class="info-ic">✉️</span>
-            <div>
-              <strong>Email</strong>
-              <div class="muted">info@nablama.com</div>
-              <div class="muted">ventas@nablama.com</div>
-            </div>
+          <div class="hours-card">
+            <h4>Horario de Atención</h4>
+            <p><strong>Lunes - Viernes:</strong> 8:00 AM - 6:00 PM</p>
+            <p><strong>Sábados:</strong> 9:00 AM - 2:00 PM</p>
+            <p><strong>Domingos:</strong> Cerrado</p>
           </div>
 
-          <div class="info-item">
-            <span class="info-ic">📍</span>
-            <div>
-              <strong>Dirección</strong>
-              <div class="muted">Av. Principal 123, Oficina 456</div>
-              <div class="muted">Ciudad, País</div>
-            </div>
+          <!-- ✅ Contacto rápido -->
+          <div class="quick-card">
+            <h4>Contacto rápido</h4>
+            <p class="muted">Envíanos fotos/medidas por WhatsApp y te respondemos hoy.</p>
+            <a class="wa-btn" id="waContactBtn" href="#" target="_blank" rel="noopener">
+              💬 Hablar por WhatsApp
+            </a>
           </div>
-        </div>
+        </aside>
 
-        <div class="hours-card">
-          <h4>Horario de Atención</h4>
-          <p><strong>Lunes - Viernes:</strong> 8:00 AM - 6:00 PM</p>
-          <p><strong>Sábados:</strong> 9:00 AM - 2:00 PM</p>
-          <p><strong>Domingos:</strong> Cerrado</p>
-        </div>
+        <!-- RIGHT -->
+        <form class="quote-card" id="quoteForm">
+          <h3>Solicita una Cotización</h3>
 
-        <!-- ✅ Contacto rápido -->
-        <div class="quick-card">
-          <h4>Contacto rápido</h4>
-          <p class="muted">Envíanos fotos/medidas por WhatsApp y te respondemos hoy.</p>
-          <a class="wa-btn" id="waContactBtn" href="#" target="_blank" rel="noopener">
-            💬 Hablar por WhatsApp
-          </a>
-        </div>
-      </aside>
+          <label>
+            Nombre Completo
+            <input name="name" type="text" placeholder="Tu Nombre" required />
+          </label>
 
-      <!-- RIGHT -->
-      <form class="quote-card" id="quoteForm">
-        <h3>Solicita una Cotización</h3>
+          <label>
+            Email
+            <input name="email" type="email" placeholder="tucorreo@gmail.com" required />
+          </label>
 
-        <label>
-          Nombre Completo
-          <input name="name" type="text" placeholder="Tu nombre" required />
-        </label>
+          <label>
+            Teléfono
+            <input name="phone" type="tel" placeholder="+51 999 999 999" required />
+          </label>
 
-        <label>
-          Email
-          <input name="email" type="email" placeholder="tu@email.com" required />
-        </label>
+          <label>
+            Servicio de Interés
+            <select name="service" required>
+              <option value="Construcción Integral">Construcción Integral</option>
+              <option value="Remodelación">Remodelación</option>
+              <option value="Diseño 2D/3D">Diseño 2D/3D</option>
+              <option value="Enchapado">Enchapado</option>
+              <option value="Techado">Techado</option>
+            </select>
+          </label>
 
-        <label>
-          Teléfono
-          <input name="phone" type="tel" placeholder="+51 999 999 999" required />
-        </label>
+          <label>
+            Mensaje
+            <textarea name="message" rows="5" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+          </label>
 
-        <label>
-          Servicio de Interés
-          <select name="service" required>
-            <option value="Construcción Integral">Construcción Integral</option>
-            <option value="Remodelación">Remodelación</option>
-            <option value="Diseño 2D/3D">Diseño 2D/3D</option>
-            <option value="Enchapado">Enchapado</option>
-            <option value="Techado">Techado</option>
-          </select>
-        </label>
-
-        <label>
-          Mensaje
-          <textarea name="message" rows="5" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
-        </label>
-
-        <button class="submit-btn" type="submit">Enviar Solicitud ✈️</button>
-        <p class="tiny muted">* Si prefieres, usa “Contacto rápido” por WhatsApp.</p>
-      </form>
-    </div>
-  </div>
-</section>
-
-<script>
-  // Cambia tu número aquí (con código de país, sin +)
-  const WHATSAPP_NUMBER = "51999999999";
-  const WA_TEXT = "Hola NABLAMA, quiero una cotización. Mi proyecto es:";
-
-  const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WA_TEXT)}`;
-  const waBtn = document.getElementById("waContactBtn");
-  if (waBtn) waBtn.href = waUrl;
-
-  // Form -> WhatsApp
-  const form = document.getElementById("quoteForm");
-  if (form) {
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const fd = new FormData(form);
-
-      const msg =
-        `Hola NABLAMA, quiero una cotización.%0A` +
-        `Nombre: ${encodeURIComponent(fd.get("name") || "")}%0A` +
-        `Email: ${encodeURIComponent(fd.get("email") || "")}%0A` +
-        `Teléfono: ${encodeURIComponent(fd.get("phone") || "")}%0A` +
-        `Servicio: ${encodeURIComponent(fd.get("service") || "")}%0A` +
-        `Mensaje: ${encodeURIComponent(fd.get("message") || "")}`;
-
-      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, "_blank", "noopener");
-    });
-  }
-</script>
-  
-<!-- footer -->
-  <footer class="footer">
-  <div class="container footer__grid">
-    <!-- Columna 1: Marca -->
-    <div class="footer__brand">
-      <h3>NABLAMA SA</h3>
-      <p>Construyendo el futuro, una casa a la vez.</p>
-    </div>
-    <!-- Columna 2: Servicios -->
-    <div class="footer__col">
-      <h4>Servicios</h4>
-      <ul>
-        <li><a href="#">Construcción</a></li>
-        <li><a href="#">Diseño 2D/3D</a></li>
-        <li><a href="#">Enchapado</a></li>
-        <li><a href="#">Techado</a></li>
-      </ul>
-    </div>
-    <!-- Columna 3: Empresa -->
-    <div class="footer__col">
-      <h4>Empresa</h4>
-      <ul>
-        <li><a href="#">Sobre Nosotros</a></li>
-        <li><a href="#">Proyectos</a></li>
-        <li><a href="#">Testimonios</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </div>
-    <!-- Columna 4: Redes -->
-    <div class="footer__col">
-      <h4>Síguenos</h4>
-      <div class="footer__social">
-        <a href="#" aria-label="Facebook">Facebook</a>
-        <a href="#" aria-label="Instagram">Instagram</a>
-        <a href="#" aria-label="LinkedIn">LinkedIn</a>
-        <a href="#" aria-label="Twitter">Twitter</a>
+          <button class="submit-btn" type="submit"> Solicitar P </button>
+          <p class="tiny muted">* Si prefieres, usa “Contacto rápido” por WhatsApp.</p>
+        </form>
       </div>
     </div>
+  </section>
 
-  </div>
-  <!-- Línea inferior -->
-  <div class="footer__bottom">
-    <p>© <span id="year"></span> Nablama S.A. Todos los derechos reservados| Desarrollado por BlakeDev - Nayeli Paitan</p>
-  </div>
-</footer>
+  <script>
+    // Cambia tu número aquí (con código de país, sin +)
+    const WHATSAPP_NUMBER = "51950595875";
+    const WA_TEXT = "Hola NABLAMA S.A., quiero una cotización. Mi proyecto es:";
 
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+    const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WA_TEXT)}`;
+    const waBtn = document.getElementById("waContactBtn");
+    if (waBtn) waBtn.href = waUrl;
+
+    // Form -> WhatsApp
+    const form = document.getElementById("quoteForm");
+    if (form) {
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const fd = new FormData(form);
+
+        const msg =
+          `Hola NABLAMA, quiero una cotización.%0A` +
+          `Nombre: ${encodeURIComponent(fd.get("name") || "")}%0A` +
+          `Email: ${encodeURIComponent(fd.get("email") || "")}%0A` +
+          `Teléfono: ${encodeURIComponent(fd.get("phone") || "")}%0A` +
+          `Servicio: ${encodeURIComponent(fd.get("service") || "")}%0A` +
+          `Mensaje: ${encodeURIComponent(fd.get("message") || "")}`;
+
+        window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, "_blank", "noopener");
+      });
+    }
+  </script>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <!-- Columna 1: Marca -->
+      <div class="footer__brand">
+        <h3>NABLAMA SA</h3>
+        <p>Construyendo el futuro, una casa a la vez.</p>
+      </div>
+      <!-- Columna 2: Servicios -->
+      <div class="footer__col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#">Construcción</a></li>
+          <li><a href="#">Diseño 2D/3D</a></li>
+          <li><a href="#">Enchapado</a></li>
+          <li><a href="#">Techado</a></li>
+        </ul>
+      </div>
+      <!-- Columna 3: Empresa -->
+      <div class="footer__col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#">Sobre Nosotros</a></li>
+          <li><a href="#">Proyectos</a></li>
+          <li><a href="#">Testimonios</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <!-- Columna 4: Redes -->
+      <div class="footer__col">
+        <h4>Síguenos</h4>
+        <div class="social">
+          <a href="https://www.facebook.com/nablamasa" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/nayeli.paitan/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/+51950595875" aria-label="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+    </div>
+    
+    <!-- Línea inferior -->
+    <div class="footer__bottom">
+      <p>
+        © <span id="year"></span> Nablama S.A. Todos los derechos reservados | 
+        Desarrollado por 
+        <a href="https://nayelipaitan.github.io/BlakeDev/" target="_blank">BlakeDev</a> - 
+        <a href="https://nayelipaitan.github.io/portafolio-Nayeli-Paitan/" target="_blank">Nayeli Paitan</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
   <script src="assets/main.js"></script>
 </body>
+
 </html>
